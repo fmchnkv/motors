@@ -1,0 +1,73 @@
+:root {
+  --title: 50px;
+  --subtitle: 35px;
+  --caption: 30px;
+  --subcaption: 24px;
+  --big-label: 22px;
+  --text-big: 20px;
+  --label: 18px;
+  --subject: 17px;
+  --text: 16px;
+  --small-label: 14px;
+  --text-small: 12px;
+  --thin-big: 11px;
+  --thin: 10px;
+  --thin-small: 9px;
+}
+.banner {
+  padding: 20px 0 35px;
+}
+@media (min-width: 1025px) {
+  .banner {
+    padding: 20px 0 55px;
+  }
+}
+.banner .slider__container {
+  margin: 0 -10px;
+}
+.banner .slide {
+  position: relative;
+  padding: 15px 20px;
+  height: 230px;
+  margin: 0 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+@media (min-width: 769px) {
+  .banner .slide {
+    height: 360px;
+  }
+}
+@media (min-width: 1025px) {
+  .banner .slide {
+    height: 420px;
+    padding: 40px 50px;
+  }
+}
+@media (min-width: 1441px) {
+  .banner .slide {
+    height: 500px;
+  }
+}
+.banner .slide span {
+  display: block;
+  max-width: 270px;
+}
+@media (min-width: 1025px) {
+  .banner .slide span {
+    max-width: 575px;
+  }
+}
+.banner .slider .slick-dots {
+  position: absolute;
+  bottom: 20px;
+}
+.banner .slider .slick-dots li button::before {
+  color: #FEFEFE;
+  opacity: 1;
+}
+.banner .slider .slick-dots li.slick-active button::before {
+  color: #F81E36;
+}

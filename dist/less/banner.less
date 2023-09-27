@@ -1,0 +1,73 @@
+@import "./_variables.less";
+
+.banner {
+  padding: 20px 0 35px;
+
+  @media (min-width: 1025px) {
+    padding: 20px 0 55px;
+  }
+
+  .slider__container {
+    margin: 0 -10px;
+  }
+
+  .slide {
+    position: relative;
+    padding: 15px 20px;
+    height: 230px;
+    margin: 0 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+    @media (min-width: 769px) {
+      height: 360px; 
+    }
+
+    @media (min-width: 1025px) {
+      height: 420px;
+      padding: 40px 50px;
+    }
+    @media (min-width: 1441px) {
+      height: 500px;
+    }
+
+    span {
+      display: block;
+      max-width: 270px;
+
+      @media (min-width: 1025px) {
+        max-width: 575px;
+      }
+    }
+  }
+
+  .slider {
+
+    .slick-dots {
+      position: absolute;
+      bottom: 20px;
+
+      li {
+
+        button {
+          &::before {
+            color: @white;
+            opacity: 1;
+          }
+        }
+  
+        &.slick-active {
+  
+          button {
+  
+            &::before {
+              color: @main;
+            }
+          }
+        }
+      }
+    }
+  }
+}

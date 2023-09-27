@@ -1,0 +1,87 @@
+:root {
+  --title: 50px;
+  --subtitle: 35px;
+  --caption: 30px;
+  --subcaption: 24px;
+  --big-label: 22px;
+  --text-big: 20px;
+  --label: 18px;
+  --subject: 17px;
+  --text: 16px;
+  --small-label: 14px;
+  --text-small: 12px;
+  --thin-big: 11px;
+  --thin: 10px;
+  --thin-small: 9px;
+}
+.slider.type_1 .slider__arrow {
+  position: absolute;
+  top: calc(50% - 21px);
+  z-index: 2;
+}
+.slider.type_1 .slider__arrow_next {
+  right: -21px;
+}
+.slider.type_1 .slider__arrow_prev {
+  left: -21px;
+}
+.slider.type_1 .slick-dots {
+  position: static;
+  margin: 15px auto 10px;
+}
+.slider.type_2 .slick-dots {
+  position: static;
+  margin: 15px auto 10px;
+}
+.slider.type_2 .slider__arrow {
+  background-color: #F9F9F9;
+}
+.slider__arrows {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.slider__arrow {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: #FEFEFE;
+}
+.slider .slick-dots {
+  font-size: 1px;
+}
+.slider .slick-dots button,
+.slider .slick-dots li {
+  width: 5px;
+  height: 5px;
+}
+@media (min-width: 1025px) {
+  .slider .slick-dots button,
+  .slider .slick-dots li {
+    width: 7px;
+    height: 7px;
+  }
+}
+.slider .slick-dots li button::before {
+  width: 5px;
+  height: 5px;
+  color: #1B1A1A;
+  font-size: 15px;
+  line-height: 1;
+}
+@media (min-width: 1025px) {
+  .slider .slick-dots li button::before {
+    width: 7px;
+    height: 7px;
+    font-size: 20px;
+  }
+}
+.slider .slick-dots li.slick-active button::before {
+  color: #F81E36;
+}

@@ -1,0 +1,244 @@
+:root {
+  --title: 50px;
+  --subtitle: 35px;
+  --caption: 30px;
+  --subcaption: 24px;
+  --big-label: 22px;
+  --text-big: 20px;
+  --label: 18px;
+  --subject: 17px;
+  --text: 16px;
+  --small-label: 14px;
+  --text-small: 12px;
+  --thin-big: 11px;
+  --thin: 10px;
+  --thin-small: 9px;
+}
+.catalog {
+  padding: 0 0 35px;
+}
+.catalog__header {
+  align-items: center;
+  margin: 0 0 30px;
+  width: 100%;
+  justify-content: flex-end;
+}
+.catalog__filter-view {
+  margin: 0 7px 0 0;
+}
+@media (min-width: 769px) {
+  .catalog__filter-view {
+    margin: 0 auto 0 0;
+  }
+}
+@media (min-width: 1025px) {
+  .catalog__filter-view {
+    display: none;
+  }
+}
+.catalog__view-icon {
+  width: 29px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.catalog__view-icon.active rect {
+  stroke: #1B1A1A;
+}
+.catalog__view-icon.view-card {
+  margin: 0 7px 0 0;
+}
+.catalog__sort {
+  margin: 0 7px 0 auto;
+  width: 100%;
+  max-width: 200px;
+}
+@media (min-width: 1025px) {
+  .catalog__sort {
+    max-width: none;
+    width: auto;
+  }
+}
+.catalog__sort button {
+  width: 100%;
+}
+.catalog__right {
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .catalog__right {
+    width: calc(100% - 355px);
+  }
+}
+.catalog__list {
+  margin: 0 0 30px;
+}
+.catalog__list.view-card {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 769px) {
+  .catalog__list.view-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1025px) {
+  .catalog__list.view-card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 15px;
+  }
+}
+@media (min-width: 1441px) {
+  .catalog__list.view-card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.catalog__more-btn {
+  order: 1;
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .catalog__more-btn {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+.catalog__pagination {
+  margin: 0 0 25px;
+}
+.filter {
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 360px;
+  height: 100%;
+  overflow: auto;
+  left: -360px;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #F9F9F9;
+  transition-property: opacity, visibility, left;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  z-index: 100;
+}
+.filter.active {
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+}
+@media (min-width: 1025px) {
+  .filter {
+    padding: 30px 25px;
+    position: sticky;
+    top: 20px;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    width: 300px;
+    margin: 0 auto 0 0;
+    border-radius: 20px;
+  }
+}
+.filter__title {
+  font-size: var(--label);
+  font-weight: 700;
+  display: block;
+  margin: 0 0 30px;
+}
+@media (min-width: 1025px) {
+  .filter__title {
+    display: none;
+  }
+}
+.filter__close {
+  margin: 0 0 15px auto;
+  display: flex;
+}
+@media (min-width: 1025px) {
+  .filter__close {
+    display: none;
+  }
+}
+.filter__field {
+  margin: 0 0 30px;
+}
+.filter__btn {
+  width: 100%;
+}
+.field__label {
+  display: block;
+  margin: 0 0 15px;
+  font-size: var(--subject);
+  font-weight: 500;
+}
+.field__range-inputs {
+  gap: 10px;
+  margin: 0 0 15px;
+}
+.field__range-inputs input {
+  width: 50%;
+  background: #FEFEFE;
+  padding: 10px;
+  border: 0;
+  text-align: center;
+  font-size: var(--small-label);
+}
+.field__checkbox {
+  display: block;
+}
+.field__checkbox:not(:last-child) {
+  margin: 0 0 15px;
+}
+.field__checkbox input {
+  display: none;
+}
+.field__checkbox input:checked + span::before {
+  border-color: #F81E36;
+}
+.field__checkbox input:checked + span::after {
+  opacity: 1;
+}
+.field__checkbox span {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.field__checkbox span::before {
+  content: '';
+  width: 23px;
+  height: 23px;
+  border: 1px solid #1B1A1A;
+  margin: 0 14px 0 0;
+}
+.field__checkbox span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url(/dist/img/checkbox.svg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+.field .ui-slider {
+  border: 0;
+  height: 2px;
+  background-color: #F81E36;
+  max-width: calc(100% - 8px);
+}
+.field .ui-slider-range {
+  display: none;
+}
+.field .ui-slider-handle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #F81E36;
+  margin-left: 0;
+  top: -4px;
+}

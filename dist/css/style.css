@@ -1,0 +1,153 @@
+:root {
+  --title: 50px;
+  --subtitle: 35px;
+  --caption: 30px;
+  --subcaption: 24px;
+  --big-label: 22px;
+  --text-big: 20px;
+  --label: 18px;
+  --subject: 17px;
+  --text: 16px;
+  --small-label: 14px;
+  --text-small: 12px;
+  --thin-big: 11px;
+  --thin: 10px;
+  --thin-small: 9px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  line-height: 1.2;
+  font-family: 'Mulish', sans-serif;
+  font-size: var(--text);
+  color: #1B1A1A;
+}
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.container {
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1441px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+.row {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.btn_bordered {
+  color: #1B1A1A;
+  padding: 12px 16px;
+  font-size: var(--text);
+  border-radius: 12px;
+  border-color: #1B1A1A;
+}
+.btn_red {
+  color: #FEFEFE;
+  background-color: #F81E36;
+  padding: 6px 6px 8px;
+  border-radius: 5px;
+}
+.btn_red.btn_big {
+  padding: 13px;
+}
+@media (min-width: 1025px) {
+  .btn_red {
+    padding: 12px;
+  }
+}
+.btn_black {
+  color: #FEFEFE;
+  background-color: #373737;
+  padding: 6px 6px 8px;
+  border-radius: 5px;
+}
+@media (min-width: 1025px) {
+  .btn_black {
+    padding: 12px;
+  }
+}
+.btn_yellow {
+  color: #FEFEFE;
+  background-color: #F5A416;
+  padding: 6px 6px 8px;
+  border-radius: 5px;
+}
+@media (min-width: 1025px) {
+  .btn_yellow {
+    padding: 12px;
+  }
+}
+.white {
+  color: #FEFEFE;
+}
+.main-title {
+  font-size: var(--subcaption);
+  font-weight: 600;
+}
+@media (min-width: 1025px) {
+  .main-title {
+    font-size: var(--title);
+    font-weight: 500;
+  }
+}
+.title {
+  font-size: var(--subcaption);
+  font-weight: 600;
+}
+@media (min-width: 1025px) {
+  .title {
+    font-size: var(--subtitle);
+    font-weight: 500;
+  }
+}
+.select2-search {
+  display: none;
+}
+.redactor p {
+  margin: 0 0 15px;
+}
+ > .redactor:last-child {
+  margin: 0;
+}

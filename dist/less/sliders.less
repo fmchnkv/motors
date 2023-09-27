@@ -1,0 +1,104 @@
+@import "./_variables.less";
+
+.slider {
+  // position: relative;
+
+  &.type_1 {
+
+    .slider__arrow {
+      position: absolute;
+      top: calc(50% - 21px);
+      z-index: 2;
+
+      &_next {
+        right: -21px;
+      }
+
+      &_prev {
+        left: -21px;
+      }
+    }
+
+    .slick-dots {
+      position: static;
+      margin: 15px auto 10px;
+    }
+
+  }
+
+  &.type_2 {
+
+    .slick-dots {
+      position: static;
+      margin: 15px auto 10px;
+    }
+
+    .slider__arrow {
+      background-color: @grey-light;
+    }
+  }
+
+  &__arrows {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__arrow {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: @white;
+  }
+
+
+  .slick-dots {
+    font-size: 1px;
+
+    button, li {
+      width: 5px;
+      height: 5px;
+
+      @media (min-width: 1025px) {
+        width: 7px;
+        height: 7px;
+      }
+    }
+
+    li {
+
+      button {
+        &::before {
+          width: 5px;
+          height: 5px;
+          color: @black;
+          font-size: 15px;
+          line-height: 1;
+  
+          @media (min-width: 1025px) {
+            width: 7px;
+            height: 7px;
+            font-size: 20px;
+          }
+        }
+      }
+
+      &.slick-active {
+
+        button {
+
+          &::before {
+            color: @main;
+          }
+        }
+      }
+    }
+
+  }
+}
