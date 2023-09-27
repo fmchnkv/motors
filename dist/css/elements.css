@@ -17,6 +17,10 @@
 .breadcrumb {
   display: none;
 }
+.breadcrumb_mobile {
+  display: block;
+  margin: 20px 0;
+}
 @media (min-width: 1025px) {
   .breadcrumb {
     display: block;

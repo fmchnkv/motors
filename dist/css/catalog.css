@@ -89,6 +89,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 50px 15px;
   }
+  .catalog__list.view-card.catalog__list_full-width {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (min-width: 1441px) {
   .catalog__list.view-card {

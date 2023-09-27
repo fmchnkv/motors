@@ -29,21 +29,579 @@
   <link rel="stylesheet" href="/dist/css/style.css">
 </head>
 
-<body>
+<body class="compare-page">
 
-  <div class="breadcrumb">
+  <div class="breadcrumb breadcrumb_mobile">
     <div class="container">
       <div class="breadcrumb__inner">
         <a href="#">Главная</a>
         <span class="sep">/</span>
-        <a href="#">Двигатели</a>
-        <span class="sep">/</span>
-        <a href="#">Двигатели бензиновые</a>
-        <span class="sep">/</span>
-        <span>Двигатель Loncin LC1P90F-1 (A type) D25.4 12А</span>
+        <span>Сравнение</span>
       </div>
     </div>
   </div>
+
+  <section class="section p-compare">
+    <div class="container">
+      <div class="p-compare__inner">
+        <div class="p-compare__header">
+          <span class="p-compare__title title">Сравнение товаров</span>
+          <button class="p-compare__clear">
+            <span>Очистить сравнение</span>
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0161 10.6452C12.2925 10.9266 12.288 11.3784 12.006 11.6542C11.724 11.9301 11.2713 11.9256 10.9949 11.6441L6.51128 7.07922L1.85942 11.6529C1.57812 11.9295 1.12541 11.9262 0.84826 11.6454C0.57111 11.3647 0.574474 10.9129 0.855772 10.6363L5.51025 6.06003L0.888911 1.35487C0.612483 1.07343 0.617006 0.621656 0.899013 0.345805C1.18102 0.0699542 1.63372 0.0744864 1.91015 0.355928L6.52892 5.05847L11.1398 0.525059C11.4211 0.248485 11.8738 0.251855 12.1509 0.532586C12.4281 0.813317 12.4247 1.2651 12.1434 1.54167L7.52995 6.07766L12.0161 10.6452Z" fill="#F81E36"/>
+            </svg>              
+          </button>
+        </div>
+        <div class="p-compare__fields">
+          <div class="comapre___field">
+            <label class="field__checkbox">
+              <input type="checkbox" name="" id="">
+              <span>Все характеристики</span>
+            </label>
+            <label class="field__checkbox">
+              <input type="checkbox" name="" id="">
+              <span>Различающиеся характеристики</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="p-compare__list row">
+          <div class="p-compare__item column product-item">
+            <div class="p-compare__img-wrapper">
+              <img src="/dist/img/cats-plug-2.png" alt="">
+              <div class="product-item__actions column">
+                <button class="product-item__action wish">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                      d="M16.1332 24.3379L15.9998 24.4687L15.8532 24.3379C9.51984 18.7008 5.33317 14.9733 5.33317 11.1935C5.33317 8.57766 7.33317 6.6158 9.99984 6.6158C12.0532 6.6158 14.0532 7.92371 14.7598 9.70245H17.2398C17.9465 7.92371 19.9465 6.6158 21.9998 6.6158C24.6665 6.6158 26.6665 8.57766 26.6665 11.1935C26.6665 14.9733 22.4798 18.7008 16.1332 24.3379ZM21.9998 4C19.6798 4 17.4532 5.0594 15.9998 6.72044C14.5465 5.0594 12.3198 4 9.99984 4C5.89317 4 2.6665 7.15204 2.6665 11.1935C2.6665 16.1243 7.19984 20.1657 14.0665 26.2736L15.9998 28L17.9332 26.2736C24.7998 20.1657 29.3332 16.1243 29.3332 11.1935C29.3332 7.15204 26.1065 4 21.9998 4Z"
+                      fill="#1B1A1A" />
+                  </svg>
+                </button>
+                <button class="product-item__action compare">
+                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.86562 5.75534C4.86562 5.29938 4.496 4.92976 4.04004 4.92976C3.58408 4.92976 3.21445 5.29938 3.21445 5.75534L4.86562 5.75534ZM3.21445 5.75534L3.21445 14.6755L4.86562 14.6755L4.86562 5.75534L3.21445 5.75534Z"
+                      fill="#1B1A1A" />
+                    <path
+                      d="M9.66885 2.32449C9.66885 1.86854 9.29922 1.49891 8.84326 1.49891C8.3873 1.49891 8.01768 1.86854 8.01768 2.32449L9.66885 2.32449ZM8.01768 2.32449L8.01768 14.6755L9.66885 14.6755L9.66885 2.32449L8.01768 2.32449Z"
+                      fill="#1B1A1A" />
+                    <path
+                      d="M14.4718 9.18616C14.4718 8.7302 14.1022 8.36057 13.6462 8.36057C13.1903 8.36057 12.8207 8.7302 12.8207 9.18616L14.4718 9.18616ZM12.8207 9.18616L12.8207 14.6755L14.4718 14.6755L14.4718 9.18616L12.8207 9.18616Z"
+                      fill="#1B1A1A" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <span class="product-item__sku">Арт. 00000</span>
+            <a href="#" class="product-item__caption">Двигатель Loncin LC1P90F-1 (A type) D25.4 12А</a>
+            <div class="product-row__price-block">
+              <span class="product-row__price">39 650 р.</span>
+              <span class="product-row__old-price">20 650 р.</span>
+            </div>
+            <a href="#" class="product-item__btn btn btn_red add-to-cart">В корзину</a>
+
+            <div class="p-compare__body">
+              <div class="p-compare__wrap">
+
+                <span class="p-compare__label">Преимущества:</span>
+                <div class="product-item__rating row">
+                  <div class="product-item__rating-stars row">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#C4C4C4" />
+                    </svg>
+                  </div>
+                  <span class="product-item__reviews">2 отзыва</span>
+                </div>
+              </div>
+
+              <div class="p-compare__wrap">
+                <span class="p-compare__label">Акции</span>
+                <p class="p-compare__share-txt">Наименование акции</p>
+              </div>
+              
+              <div class="p-compare__wrap">
+                <span class="p-compare__label">Характеристики:</span>
+                <div class="p-compare__prop">
+                  <span class="p-compare__prop-name">Характеристика 1</span>
+                  <span class="p-compare__prop-value">Описание характеристики</span>
+                </div>
+                <div class="p-compare__prop">
+                  <span class="p-compare__prop-name">Характеристика 1</span>
+                  <span class="p-compare__prop-value">Описание характеристики</span>
+                </div>
+                <div class="p-compare__prop">
+                  <span class="p-compare__prop-name">Характеристика 1</span>
+                  <span class="p-compare__prop-value">Описание характеристики</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-compare__item column product-item">
+            <div class="p-compare__img-wrapper">
+              <img src="/dist/img/cats-plug-2.png" alt="">
+              <div class="product-item__actions column">
+                <button class="product-item__action wish">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                      d="M16.1332 24.3379L15.9998 24.4687L15.8532 24.3379C9.51984 18.7008 5.33317 14.9733 5.33317 11.1935C5.33317 8.57766 7.33317 6.6158 9.99984 6.6158C12.0532 6.6158 14.0532 7.92371 14.7598 9.70245H17.2398C17.9465 7.92371 19.9465 6.6158 21.9998 6.6158C24.6665 6.6158 26.6665 8.57766 26.6665 11.1935C26.6665 14.9733 22.4798 18.7008 16.1332 24.3379ZM21.9998 4C19.6798 4 17.4532 5.0594 15.9998 6.72044C14.5465 5.0594 12.3198 4 9.99984 4C5.89317 4 2.6665 7.15204 2.6665 11.1935C2.6665 16.1243 7.19984 20.1657 14.0665 26.2736L15.9998 28L17.9332 26.2736C24.7998 20.1657 29.3332 16.1243 29.3332 11.1935C29.3332 7.15204 26.1065 4 21.9998 4Z"
+                      fill="#1B1A1A" />
+                  </svg>
+                </button>
+                <button class="product-item__action compare">
+                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.86562 5.75534C4.86562 5.29938 4.496 4.92976 4.04004 4.92976C3.58408 4.92976 3.21445 5.29938 3.21445 5.75534L4.86562 5.75534ZM3.21445 5.75534L3.21445 14.6755L4.86562 14.6755L4.86562 5.75534L3.21445 5.75534Z"
+                      fill="#1B1A1A" />
+                    <path
+                      d="M9.66885 2.32449C9.66885 1.86854 9.29922 1.49891 8.84326 1.49891C8.3873 1.49891 8.01768 1.86854 8.01768 2.32449L9.66885 2.32449ZM8.01768 2.32449L8.01768 14.6755L9.66885 14.6755L9.66885 2.32449L8.01768 2.32449Z"
+                      fill="#1B1A1A" />
+                    <path
+                      d="M14.4718 9.18616C14.4718 8.7302 14.1022 8.36057 13.6462 8.36057C13.1903 8.36057 12.8207 8.7302 12.8207 9.18616L14.4718 9.18616ZM12.8207 9.18616L12.8207 14.6755L14.4718 14.6755L14.4718 9.18616L12.8207 9.18616Z"
+                      fill="#1B1A1A" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <span class="product-item__sku">Арт. 00000</span>
+            <a href="#" class="product-item__caption">Двигатель Loncin LC1P90F-1 (A type) D25.4 12А</a>
+            <div class="product-row__price-block">
+              <span class="product-row__price">39 650 р.</span>
+              <span class="product-row__old-price">20 650 р.</span>
+            </div>
+            <a href="#" class="product-item__btn btn btn_red add-to-cart">В корзину</a>
+
+            <div class="p-compare__body">
+              <div class="p-compare__wrap">
+
+                <span class="p-compare__label">Преимущества:</span>
+                <div class="product-item__rating row">
+                  <div class="product-item__rating-stars row">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#C4C4C4" />
+                    </svg>
+                  </div>
+                  <span class="product-item__reviews">2 отзыва</span>
+                </div>
+              </div>
+
+              <div class="p-compare__wrap">
+                <span class="p-compare__label">Акции</span>
+                <p class="p-compare__share-txt">Наименование акции</p>
+              </div>
+              
+              <div class="p-compare__wrap">
+                <span class="p-compare__label">Характеристики:</span>
+                <div class="p-compare__prop">
+                  <span class="p-compare__prop-name">Характеристика 1</span>
+                  <span class="p-compare__prop-value">Описание характеристики</span>
+                </div>
+                <div class="p-compare__prop">
+                  <span class="p-compare__prop-name">Характеристика 1</span>
+                  <span class="p-compare__prop-value">Описание характеристики</span>
+                </div>
+                <div class="p-compare__prop">
+                  <span class="p-compare__prop-name">Характеристика 1</span>
+                  <span class="p-compare__prop-value">Описание характеристики</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-compare__item column product-item">
+            <div class="p-compare__img-wrapper">
+              <img src="/dist/img/cats-plug-2.png" alt="">
+              <div class="product-item__actions column">
+                <button class="product-item__action wish">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                      d="M16.1332 24.3379L15.9998 24.4687L15.8532 24.3379C9.51984 18.7008 5.33317 14.9733 5.33317 11.1935C5.33317 8.57766 7.33317 6.6158 9.99984 6.6158C12.0532 6.6158 14.0532 7.92371 14.7598 9.70245H17.2398C17.9465 7.92371 19.9465 6.6158 21.9998 6.6158C24.6665 6.6158 26.6665 8.57766 26.6665 11.1935C26.6665 14.9733 22.4798 18.7008 16.1332 24.3379ZM21.9998 4C19.6798 4 17.4532 5.0594 15.9998 6.72044C14.5465 5.0594 12.3198 4 9.99984 4C5.89317 4 2.6665 7.15204 2.6665 11.1935C2.6665 16.1243 7.19984 20.1657 14.0665 26.2736L15.9998 28L17.9332 26.2736C24.7998 20.1657 29.3332 16.1243 29.3332 11.1935C29.3332 7.15204 26.1065 4 21.9998 4Z"
+                      fill="#1B1A1A" />
+                  </svg>
+                </button>
+                <button class="product-item__action compare">
+                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.86562 5.75534C4.86562 5.29938 4.496 4.92976 4.04004 4.92976C3.58408 4.92976 3.21445 5.29938 3.21445 5.75534L4.86562 5.75534ZM3.21445 5.75534L3.21445 14.6755L4.86562 14.6755L4.86562 5.75534L3.21445 5.75534Z"
+                      fill="#1B1A1A" />
+                    <path
+                      d="M9.66885 2.32449C9.66885 1.86854 9.29922 1.49891 8.84326 1.49891C8.3873 1.49891 8.01768 1.86854 8.01768 2.32449L9.66885 2.32449ZM8.01768 2.32449L8.01768 14.6755L9.66885 14.6755L9.66885 2.32449L8.01768 2.32449Z"
+                      fill="#1B1A1A" />
+                    <path
+                      d="M14.4718 9.18616C14.4718 8.7302 14.1022 8.36057 13.6462 8.36057C13.1903 8.36057 12.8207 8.7302 12.8207 9.18616L14.4718 9.18616ZM12.8207 9.18616L12.8207 14.6755L14.4718 14.6755L14.4718 9.18616L12.8207 9.18616Z"
+                      fill="#1B1A1A" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <span class="product-item__sku">Арт. 00000</span>
+            <a href="#" class="product-item__caption">Двигатель Loncin LC1P90F-1 (A type) D25.4 12А</a>
+            <div class="product-row__price-block">
+              <span class="product-row__price">39 650 р.</span>
+              <span class="product-row__old-price">20 650 р.</span>
+            </div>
+            <a href="#" class="product-item__btn btn btn_red add-to-cart">В корзину</a>
+
+            <div class="p-compare__body">
+              <div class="p-compare__wrap">
+
+                <span class="p-compare__label">Преимущества:</span>
+                <div class="product-item__rating row">
+                  <div class="product-item__rating-stars row">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#C4C4C4" />
+                    </svg>
+                  </div>
+                  <span class="product-item__reviews">2 отзыва</span>
+                </div>
+              </div>
+
+              <div class="p-compare__wrap">
+                <span class="p-compare__label">Акции</span>
+                <p class="p-compare__share-txt">Наименование акции</p>
+              </div>
+              
+              <div class="p-compare__wrap">
+                <span class="p-compare__label">Характеристики:</span>
+                <div class="p-compare__prop">
+                  <span class="p-compare__prop-name">Характеристика 1</span>
+                  <span class="p-compare__prop-value">Описание характеристики</span>
+                </div>
+                <div class="p-compare__prop">
+                  <span class="p-compare__prop-name">Характеристика 1</span>
+                  <span class="p-compare__prop-value">Описание характеристики</span>
+                </div>
+                <div class="p-compare__prop">
+                  <span class="p-compare__prop-name">Характеристика 1</span>
+                  <span class="p-compare__prop-value">Описание характеристики</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-compare__item column product-item">
+            <div class="p-compare__img-wrapper">
+              <img src="/dist/img/cats-plug-2.png" alt="">
+              <div class="product-item__actions column">
+                <button class="product-item__action wish">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                      d="M16.1332 24.3379L15.9998 24.4687L15.8532 24.3379C9.51984 18.7008 5.33317 14.9733 5.33317 11.1935C5.33317 8.57766 7.33317 6.6158 9.99984 6.6158C12.0532 6.6158 14.0532 7.92371 14.7598 9.70245H17.2398C17.9465 7.92371 19.9465 6.6158 21.9998 6.6158C24.6665 6.6158 26.6665 8.57766 26.6665 11.1935C26.6665 14.9733 22.4798 18.7008 16.1332 24.3379ZM21.9998 4C19.6798 4 17.4532 5.0594 15.9998 6.72044C14.5465 5.0594 12.3198 4 9.99984 4C5.89317 4 2.6665 7.15204 2.6665 11.1935C2.6665 16.1243 7.19984 20.1657 14.0665 26.2736L15.9998 28L17.9332 26.2736C24.7998 20.1657 29.3332 16.1243 29.3332 11.1935C29.3332 7.15204 26.1065 4 21.9998 4Z"
+                      fill="#1B1A1A" />
+                  </svg>
+                </button>
+                <button class="product-item__action compare">
+                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.86562 5.75534C4.86562 5.29938 4.496 4.92976 4.04004 4.92976C3.58408 4.92976 3.21445 5.29938 3.21445 5.75534L4.86562 5.75534ZM3.21445 5.75534L3.21445 14.6755L4.86562 14.6755L4.86562 5.75534L3.21445 5.75534Z"
+                      fill="#1B1A1A" />
+                    <path
+                      d="M9.66885 2.32449C9.66885 1.86854 9.29922 1.49891 8.84326 1.49891C8.3873 1.49891 8.01768 1.86854 8.01768 2.32449L9.66885 2.32449ZM8.01768 2.32449L8.01768 14.6755L9.66885 14.6755L9.66885 2.32449L8.01768 2.32449Z"
+                      fill="#1B1A1A" />
+                    <path
+                      d="M14.4718 9.18616C14.4718 8.7302 14.1022 8.36057 13.6462 8.36057C13.1903 8.36057 12.8207 8.7302 12.8207 9.18616L14.4718 9.18616ZM12.8207 9.18616L12.8207 14.6755L14.4718 14.6755L14.4718 9.18616L12.8207 9.18616Z"
+                      fill="#1B1A1A" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <span class="product-item__sku">Арт. 00000</span>
+            <a href="#" class="product-item__caption">Двигатель Loncin LC1P90F-1 (A type) D25.4 12А</a>
+            <div class="product-row__price-block">
+              <span class="product-row__price">39 650 р.</span>
+              <span class="product-row__old-price">20 650 р.</span>
+            </div>
+            <a href="#" class="product-item__btn btn btn_red add-to-cart">В корзину</a>
+
+            <div class="p-compare__body">
+              <div class="p-compare__wrap">
+
+                <span class="p-compare__label">Преимущества:</span>
+                <div class="product-item__rating row">
+                  <div class="product-item__rating-stars row">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#F5A416" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                      fill="none">
+                      <path
+                        d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                        fill="#C4C4C4" />
+                    </svg>
+                  </div>
+                  <span class="product-item__reviews">2 отзыва</span>
+                </div>
+              </div>
+
+              <div class="p-compare__wrap">
+                <span class="p-compare__label">Акции</span>
+                <p class="p-compare__share-txt">Наименование акции</p>
+              </div>
+              
+              <div class="p-compare__wrap">
+                <span class="p-compare__label">Характеристики:</span>
+                <div class="p-compare__prop">
+                  <span class="p-compare__prop-name">Характеристика 1</span>
+                  <span class="p-compare__prop-value">Описание характеристики</span>
+                </div>
+                <div class="p-compare__prop">
+                  <span class="p-compare__prop-name">Характеристика 1</span>
+                  <span class="p-compare__prop-value">Описание характеристики</span>
+                </div>
+                <div class="p-compare__prop">
+                  <span class="p-compare__prop-name">Характеристика 1</span>
+                  <span class="p-compare__prop-value">Описание характеристики</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-compare__m-list">
+          <div class="p-compare__m-inner">
+            <div class="p-compare__m-wrap">
+              <span class="p-compare__label">Преимущества:</span>
+              <div class="p-compare__row row">
+                <div class="item">
+                  <div class="product-item__rating row">
+                    <div class="product-item__rating-stars row">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                        fill="none">
+                        <path
+                          d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                          fill="#F5A416" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                        fill="none">
+                        <path
+                          d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                          fill="#F5A416" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                        fill="none">
+                        <path
+                          d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                          fill="#F5A416" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                        fill="none">
+                        <path
+                          d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                          fill="#F5A416" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                        fill="none">
+                        <path
+                          d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                          fill="#C4C4C4" />
+                      </svg>
+                    </div>
+                    <span class="product-item__reviews">2 отзыва</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product-item__rating row">
+                    <div class="product-item__rating-stars row">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                        fill="none">
+                        <path
+                          d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                          fill="#F5A416" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                        fill="none">
+                        <path
+                          d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                          fill="#F5A416" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                        fill="none">
+                        <path
+                          d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                          fill="#F5A416" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                        fill="none">
+                        <path
+                          d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                          fill="#F5A416" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                        fill="none">
+                        <path
+                          d="M7.5 0.5L9.26336 5.57295L14.6329 5.68237L10.3532 8.92705L11.9084 14.0676L7.5 11L3.09161 14.0676L4.64683 8.92705L0.367076 5.68237L5.73664 5.57295L7.5 0.5Z"
+                          fill="#C4C4C4" />
+                      </svg>
+                    </div>
+                    <span class="product-item__reviews">2 отзыва</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-compare__m-wrap">
+              <span class="p-compare__label">Акции:</span>
+              <div class="p-compare__row row">
+                <div class="item">
+                  <p class="p-compare__share-txt">Наименование акции</p>
+                </div>
+                <div class="item">
+                  <p class="p-compare__share-txt">Наименование акции</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-compare__m-wrap">
+              <span class="p-compare__label">Характеристики:</span>
+              <div class="p-compare__group">
+                <span class="p-compare__prop-name">Характеристика 1</span>
+                <div class="p-compare__row row">
+                  <div class="item">
+                    <span class="p-compare__prop-value">Описание характеристики</span>
+                  </div>
+                  <div class="item">
+                    <span class="p-compare__prop-value">Описание характеристики</span>
+                  </div>
+                  <div class="item">
+                    <span class="p-compare__prop-value">Описание характеристики</span>
+                  </div>
+                  <div class="item">
+                    <span class="p-compare__prop-value">Описание характеристики</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-compare__group">
+                <span class="p-compare__prop-name">Характеристика 1</span>
+                <div class="p-compare__row row">
+                  <div class="item">
+                    <span class="p-compare__prop-value">Описание характеристики</span>
+                  </div>
+                  <div class="item">
+                    <span class="p-compare__prop-value">Описание характеристики</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-compare__group">
+                <span class="p-compare__prop-name">Характеристика 1</span>
+                <div class="p-compare__row row">
+                  <div class="item">
+                    <span class="p-compare__prop-value">Описание характеристики</span>
+                  </div>
+                  <div class="item">
+                    <span class="p-compare__prop-value">Описание характеристики</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="/dist/js/jquery.js"></script>
   <script src="/dist/js/jquery-ui.js"></script>
