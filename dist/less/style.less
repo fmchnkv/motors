@@ -62,13 +62,37 @@ button {
   flex-direction: column;
 }
 
+a.btn, button.btn {
+
+  &_bordered {
+
+    &:hover {
+      border-color: @main;
+      color: @main;
+    }
+  }
+
+  &_red {
+
+    &:hover {
+      background-color: @main-hover;
+    }
+
+    &:active {
+      background-color: @main-active;
+    }
+  }
+}
+
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   border: 1px solid transparent;
-  
+  transition-property: color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 
   &_bordered {
     color: @black;
@@ -83,6 +107,11 @@ button {
     background-color: @main;
     padding: 6px 6px 8px;
     border-radius: 5px;
+    transition: color 0.3s ease;
+
+    &:disabled {
+      background-color: @grey-dark;
+    }
 
     &.btn_big {
       padding: 13px;

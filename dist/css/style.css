@@ -69,12 +69,28 @@ button {
   display: flex;
   flex-direction: column;
 }
+a.btn_bordered:hover,
+button.btn_bordered:hover {
+  border-color: #F81E36;
+  color: #F81E36;
+}
+a.btn_red:hover,
+button.btn_red:hover {
+  background-color: #F20D26;
+}
+a.btn_red:active,
+button.btn_red:active {
+  background-color: #F46776;
+}
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   border: 1px solid transparent;
+  transition-property: color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 .btn_bordered {
   color: #1B1A1A;
@@ -88,6 +104,10 @@ button {
   background-color: #F81E36;
   padding: 6px 6px 8px;
   border-radius: 5px;
+  transition: color 0.3s ease;
+}
+.btn_red:disabled {
+  background-color: #9D9D9D;
 }
 .btn_red.btn_big {
   padding: 13px;

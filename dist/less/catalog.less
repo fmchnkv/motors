@@ -29,6 +29,13 @@
     align-items: center;
     justify-content: center;
 
+    &:hover {
+
+      rect {
+        stroke: @main;
+      }
+    }
+
     &.active {
       rect {
         stroke: @black;
@@ -195,6 +202,20 @@
 
   &__checkbox {
     display: block;
+    cursor: pointer;
+
+    &:hover {
+      input {
+        & + span {
+          color: @main;
+
+          &::before {
+            border-color: @main;
+          }
+
+        }
+      }
+    }
 
     &:not(:last-child) {
       margin: 0 0 15px;
