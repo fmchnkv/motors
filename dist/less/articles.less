@@ -33,9 +33,16 @@ section.articles-section {
 	.articles-item__img-wrapper {
 		display: block;
 		margin-bottom: 16px;
+	
 		img {
 			border-radius: 20px;
 		}
+	}
+	a.articles-item__img-wrapper {
+		&:hover {
+			opacity: 0.75;
+		}
+		
 	}
 }
 .articles-upper {
@@ -48,6 +55,11 @@ section.articles-section {
 	}
 	.articles-social__link {
 		margin-left: 14px;
+		&:hover {
+			path {
+			  fill: @main;
+			}
+		}
 		&:first-child {
 			margin-left: unset;
 		}
@@ -59,9 +71,6 @@ section.articles-section {
 
 
 .articles-lower {
-	a {
-		color: @black;
-	}
 	p {
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
@@ -72,6 +81,12 @@ section.articles-section {
 	h3 {
 		margin-bottom: 8px;
 	}
+	a {
+		color: @black;
+		&:hover {
+			color: @main;
+		}
+	} 
 }
 
 
