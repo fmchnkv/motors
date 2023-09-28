@@ -43,6 +43,9 @@
   align-items: center;
   justify-content: center;
 }
+.catalog__view-icon:hover rect {
+  stroke: #F81E36;
+}
 .catalog__view-icon.active rect {
   stroke: #1B1A1A;
 }
@@ -191,6 +194,13 @@
 }
 .field__checkbox {
   display: block;
+  cursor: pointer;
+}
+.field__checkbox:hover input + span {
+  color: #F81E36;
+}
+.field__checkbox:hover input + span::before {
+  border-color: #F81E36;
 }
 .field__checkbox:not(:last-child) {
   margin: 0 0 15px;
