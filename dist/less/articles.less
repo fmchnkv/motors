@@ -1,0 +1,147 @@
+@import "./_variables.less";
+
+
+section.articles-section {
+	.btn_bordered {
+		max-height: 44px;
+		padding: 12px 39px;
+	}
+	.articles__header {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 30px;
+		align-items: center;
+	}
+	h1.section__title {
+		padding: 0;
+		margin: 0 0 20px 0;
+	}
+	.articles__body {
+		display: grid;
+		gap: 0 15px;
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+	}
+	.articles-item {
+		margin-bottom: 30px;
+		max-width: 335px;
+		max-height: 380px;
+	}
+}
+.articles-item {
+	.articles-item__img-wrapper {
+		display: block;
+		margin-bottom: 16px;
+		img {
+			border-radius: 20px;
+		}
+	}
+}
+.articles-upper {
+	display: flex;
+	justify-content: space-between;
+}
+.articles-upper {
+	.articles-social {
+		display: flex;
+	}
+	.articles-social__link {
+		margin-left: 14px;
+		&:first-child {
+			margin-left: unset;
+		}
+	}
+	.articles-date {
+		font-size: var(--small-label);
+	}
+}
+
+
+.articles-lower {
+	a {
+		color: @black;
+	}
+	p {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	h3 {
+		margin-bottom: 8px;
+	}
+}
+
+
+
+
+.articles-pagination-inner {
+	.catalog__more-btn.btn_bordered {
+		margin: 0 auto 25px;
+	}
+}
+
+span.select2 {
+	max-width: 290px;
+}
+.select2.articles_select {
+	margin: 0 auto;
+	width: 290px;
+	max-height: 44px;
+	padding: 12px 0 12px 39px;
+	cursor: pointer;
+	border: #1B1A1A 1px solid;
+	border-radius: 12px;
+}
+@media (min-width:600px) {
+	section.articles-section {
+		.articles__body {
+			gap: 15px;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+.articles-upper {
+	margin-bottom: 9px;
+}
+.articles-item {
+	margin-bottom: 20px;
+}
+@media (min-width:769px) {
+	section.articles-section {
+		h1.section__title {
+			margin: 0;
+		}
+		.articles__header {
+			flex-direction: row;
+			margin-bottom: 40px;
+		}
+	}
+	.articles-upper {
+		margin-bottom: 16px;
+	}
+
+	.articles-upper {
+		.articles-social__link {
+			margin-left: 7px;
+		}
+		.articles-date {
+			font-size: var(--text);
+			color: @grey-dark;
+		}
+	}
+
+	.select2.articles_select {
+		margin: unset;
+	}
+}
+@media (min-width:1025px) {
+	section.articles-section {
+		.articles__body {
+			gap: 15px;
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+}
