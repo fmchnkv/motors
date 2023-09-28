@@ -83,6 +83,12 @@ button {
   border-radius: 12px;
   border-color: #1B1A1A;
 }
+.btn_orange {
+  color: #FEFEFE;
+  background-color: #F5A416;
+  padding: 6px 6px 8px;
+  border-radius: 5px;
+}
 .btn_red {
   color: #FEFEFE;
   background-color: #F81E36;
