@@ -97,6 +97,29 @@ jQuery(document).ready(function($) {
         ]
       }
 
+    //   $('.articles__slider').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay: false,
+    //     autoplaySpeed: 2000,
+    //     mobileFirst: true,
+    //     responsive: [
+          
+    //       {
+    //         breakpoint: 300,
+    //         settings: {
+    //           arrows: false,
+    //           dots: true,
+    //         }
+    //       },
+    //        {
+    //           breakpoint: 767,
+    //           settings: "unslick",
+    //        }
+    //     ]
+    //  });
+      
+
       if ($(el).hasClass('analogs__slider')) {
         params.variableWidth = true;
         params.responsive = [
