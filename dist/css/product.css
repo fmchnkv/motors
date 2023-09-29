@@ -52,6 +52,12 @@
   color: #1B1A1A;
   font-size: var(--small-label);
 }
+.product__back:hover {
+  color: #F81E36;
+}
+.product__back:hover span {
+  color: #F81E36;
+}
 .product__main {
   width: 100%;
   flex-direction: column;
