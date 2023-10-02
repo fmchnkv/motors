@@ -1,0 +1,284 @@
+:root {
+  --title: 50px;
+  --subtitle: 35px;
+  --caption: 30px;
+  --subcaption: 24px;
+  --big-label: 22px;
+  --text-big: 20px;
+  --label: 18px;
+  --subject: 17px;
+  --text: 16px;
+  --small-label: 14px;
+  --text-small: 12px;
+  --thin-big: 11px;
+  --thin: 10px;
+  --thin-small: 9px;
+}
+.pc__only {
+  display: none !important;
+}
+section.contacts .contacts__container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+section.contacts .contacts__inner {
+  display: flex;
+  justify-content: center;
+}
+section.contacts .contacts__form {
+  order: 1;
+}
+section.contacts .contacts__inner,
+section.contacts .contacts__form {
+  background-color: #F9F9F9;
+  padding: 20px;
+  border-radius: 20px;
+}
+section.contacts .contacts__map {
+  height: 400px;
+  grid-column: 1/-1;
+}
+section.contacts .contacts__map img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+section.contacts .contacts__content .contacts__email,
+section.contacts .contacts__content .contacts__phone {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #1B1A1A;
+  margin-bottom: 20px;
+}
+section.contacts .contacts__content .contacts__phone {
+  margin-bottom: 40px;
+}
+section.contacts p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-bottom: 60px;
+}
+section.contacts .social__cont {
+  display: flex;
+  justify-content: space-around;
+}
+section.contacts .social__cont a {
+  display: block;
+  position: relative;
+  height: 60px;
+  width: 60px;
+  background-color: #FEFEFE;
+  border-radius: 20px;
+  margin-right: 16px;
+}
+section.contacts .social__cont a:last-child {
+  margin-right: unset;
+}
+section.contacts .social__cont a:hover {
+  opacity: 0.75;
+}
+section.contacts .social__cont a svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section.contacts img.social__img {
+  position: absolute;
+  width: 252.17px;
+  height: 257px;
+  bottom: 0;
+  right: 0;
+}
+.contacts__inner {
+  position: relative;
+}
+section.contacts .contacts__form {
+  order: unset;
+}
+section.contacts .contacts__form h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+section.contacts .contacts__form form {
+  display: flex;
+  flex-direction: column;
+}
+section.contacts .contacts__form form .personal__data {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+}
+section.contacts .contacts__form form .personal__data a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  display: block;
+  color: #1B1A1A;
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+section.contacts .contacts__form form input {
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid #FEFEFE;
+  margin-bottom: 10px;
+}
+section.contacts .contacts__form form input:last-of-type {
+  margin-bottom: 20px;
+}
+section.contacts .contacts__form form input:hover {
+  border: 1px solid #F81E36;
+}
+section.contacts .contacts__form form input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+section.contacts .contacts__form form .field__checkbox {
+  display: flex;
+  cursor: pointer;
+}
+section.contacts .contacts__form form .field__checkbox:hover input + span {
+  color: #F81E36;
+}
+section.contacts .contacts__form form .field__checkbox:hover input + span::before {
+  border-color: #F81E36;
+}
+section.contacts .contacts__form form .field__checkbox:not(:last-child) {
+  margin: 0 0 15px;
+}
+section.contacts .contacts__form form .field__checkbox input {
+  display: none;
+}
+section.contacts .contacts__form form .field__checkbox input:checked + span::before {
+  border-color: #F81E36;
+}
+section.contacts .contacts__form form .field__checkbox input:checked + span::after {
+  opacity: 1;
+}
+section.contacts .contacts__form form .field__checkbox span {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+section.contacts .contacts__form form .field__checkbox span::before {
+  content: '';
+  width: 23px;
+  height: 23px;
+  border: 1px solid #1B1A1A;
+  margin: 0 14px 0 0;
+}
+section.contacts .contacts__form form .field__checkbox span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url(/dist/img/checkbox.svg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+section.contacts .contacts__form button[type="submit"] {
+  padding: 14px 40px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background-color: #F81E36;
+  color: #FEFEFE;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+}
+section.contacts .contacts__form button[type="submit"]:hover {
+  background-color: #F20D26;
+}
+@media (min-width: 769px) {
+  section.contacts .contacts__map {
+    height: 500px;
+  }
+  section.contacts .social__cont {
+    justify-content: unset;
+  }
+  section.contacts .contacts__inner {
+    justify-content: space-between;
+  }
+  section.contacts .contacts__inner {
+    padding: 40px;
+  }
+  section.contacts .contacts__form {
+    padding: 40px;
+  }
+  section.contacts .contacts__form h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+  section.contacts .contacts__form form {
+    display: flex;
+    flex-direction: column;
+  }
+  section.contacts .contacts__form form input {
+    padding: 16px 20px 16px 20px;
+    border-radius: 12px;
+    border: 1px solid #FEFEFE;
+    margin-bottom: 10px;
+  }
+  section.contacts .contacts__form form input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  section.contacts .contacts__form form button[type="submit"] {
+    padding: 20px 50px 20px 50px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background-color: #F81E36;
+    color: #FEFEFE;
+  }
+  section.contacts .contacts__form form .personal__data {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin: 0;
+    display: block;
+  }
+  section.contacts .contacts__form form .personal__data a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    display: block;
+    margin-left: 5px;
+  }
+}
+@media (min-width: 1441px) {
+  section.contacts .contacts__form form .personal__data {
+    display: flex;
+    align-items: center;
+  }
+  section.contacts .contacts__form form .personal__data a {
+    margin: 5px;
+  }
+}
+@media (min-width: 769px) {
+  .pc__only {
+    display: block !important;
+  }
+  section.contacts .contacts__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+  }
+}
