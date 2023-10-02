@@ -1,0 +1,397 @@
+@import "./_variables.less";
+
+
+
+.pc__only {
+    display: none !important;
+}
+
+
+
+section.contacts {
+    .contacts__container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .contacts__inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts__form {
+        order: 1;
+    }
+
+    .contacts__inner,
+    .contacts__form {
+        background-color: @grey-light;
+        padding: 20px;
+        border-radius: 20px
+    }
+
+    .contacts__map {
+        height: 400px;
+        grid-column: 1/-1;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+
+    .contacts__content {
+
+        .contacts__email,
+        .contacts__phone {
+            display: block;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
+            color: @black;
+            margin-bottom: 20px;
+        }
+
+        .contacts__phone {
+            margin-bottom: 40px;
+        }
+    }
+
+    & p {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        margin-bottom: 60px;
+    }
+
+
+    .social__cont {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            display: block;
+            position: relative;
+            height: 60px;
+            width: 60px;
+            background-color: @white;
+            border-radius: 20px;
+            margin-right: 16px;
+
+            &:last-child {
+                margin-right: unset;
+            }
+
+            // &:hover {
+            //     path {
+            //         fill: @main;
+            //     }
+            // }
+            &:hover {
+                opacity: 0.75;
+            }
+        }
+
+        a svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+
+    img.social__img {
+        position: absolute;
+        width: 252.17px;
+        height: 257px;
+        bottom: 0;
+        right: 0;
+    }
+
+}
+
+.contacts__inner {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+//form stuff
+section.contacts {
+    
+    .contacts__form {
+
+        order: unset;
+
+        h3 {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            .personal__data {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                margin: 0;
+                
+                & a {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    display: block;
+                    color: @black;
+                    text-decoration: underline;
+                    text-decoration-line: underline;
+                    text-decoration-style: solid;
+                    text-decoration-thickness: 1px;
+                    text-underline-offset: 4px;
+                }
+            }
+
+
+            input {
+                padding: 16px 20px;
+                border-radius: 12px;
+                border: 1px solid @white;
+                margin-bottom: 10px;
+
+                &:last-of-type {
+                    margin-bottom: 20px;
+                }
+                
+                &:hover {
+                    border: 1px solid @main;
+                }
+                &::placeholder {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                }
+
+            }
+
+
+
+            .field__checkbox {
+                display: flex;
+                cursor: pointer;
+            
+                &:hover {
+                  input {
+                    & + span {
+                      color: @main;
+            
+                      &::before {
+                        border-color: @main;
+                      }
+            
+                    }
+                  }
+                }
+            
+                &:not(:last-child) {
+                  margin: 0 0 15px;
+                }
+            
+                input {
+                  display: none;
+            
+                  &:checked {
+            
+                    & + span {
+            
+                      &::before {
+                        border-color: @main;
+                      }
+            
+                      &::after {
+                        opacity: 1;
+                      }
+                    }
+                  }
+                }
+            
+                span {
+                  display: flex;
+                  align-items: center;
+                  position: relative;
+            
+                  &::before {
+                    content: '';
+                    width: 23px;
+                    height: 23px;
+                    border: 1px solid @black;
+                    margin: 0 14px 0 0;
+                  }
+            
+                  &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 23px;
+                    height: 23px;
+                    background-image: url(/dist/img/checkbox.svg);
+                    background-position: center;
+                    background-size: auto;
+                    background-repeat: no-repeat;
+                    opacity: 0;
+                  }
+                }
+              }
+           
+        }
+
+        button[type="submit"] {
+            padding: 14px 40px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            background-color: @main;
+            color: @white;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 23px;
+
+            &:hover {
+                background-color: #F20D26;
+            }
+        }
+    }
+}
+
+
+@media (min-width:769px) {
+    section.contacts {
+        .contacts__map {
+            height: 500px;
+        }
+        
+        .social__cont {
+            justify-content: unset;
+        }
+        .contacts__inner {
+            justify-content: space-between;
+        }
+
+    .contacts__inner {
+        padding: 40px;
+    }
+    .contacts__form {
+        padding: 40px;
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+        }
+
+        form {
+
+            display: flex;
+            flex-direction: column;
+
+            input {
+                padding: 16px 20px 16px 20px;
+                border-radius: 12px;
+                border: 1px solid @white;
+                margin-bottom: 10px;
+
+                &::placeholder {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                }
+
+            }
+
+            button[type="submit"] {
+                padding: 20px 50px 20px 50px;
+                border-radius: 12px;
+                margin-bottom: 10px;
+                background-color: @main;
+                color: @white;
+
+                &:hover {}
+            }
+
+    
+            .personal__data {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                margin: 0;
+                display: block;
+                
+                
+                & a {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    display: block;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+}
+
+
+//form stuff end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1441px) {
+    section.contacts {
+        .contacts__form form {
+            .personal__data {
+                display: flex;
+                align-items: center;
+                a {
+                    margin: 5px;
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (min-width:769px) {
+    .pc__only {
+        display: block !important;
+    }
+
+    section.contacts {
+        .contacts__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 20px;
+        }
+    }
+}
