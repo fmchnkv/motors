@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - self pick up</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- end fonts -->
+
+
+    <link rel="stylesheet" href="/dist/css/slick.css">
+    <link rel="stylesheet" href="/dist/css/slick-theme.css">
+    <link rel="stylesheet" href="/dist/css/jquery-ui.css">
+    <link rel="stylesheet" href="/dist/css/select2.css">
+
+    <link rel="stylesheet" href="/dist/css/normalize.css">
+    <link rel="stylesheet" href="/dist/css/sliders.css">
+    <link rel="stylesheet" href="/dist/css/banner.css">
+    <link rel="stylesheet" href="/dist/css/sections.css">
+    <link rel="stylesheet" href="/dist/css/products.css">
+    <link rel="stylesheet" href="/dist/css/catalog.css">
+    <link rel="stylesheet" href="/dist/css/elements.css">
+    <link rel="stylesheet" href="/dist/css/product.css">
+    <link rel="stylesheet" href="/dist/css/swiper.css">
+    <link rel="stylesheet" href="/dist/css/slick-theme.css">
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <link rel="stylesheet" href="/dist/css/order.css">
+</head>
+
+<body>
+
+
+    <section class="order">
+        <div class="container">
+            <a href="#" class="product__back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.03012 5.05571C0.929096 5.11654 0.836774 5.20026 0.759215 5.30633C0.619324 5.49765 0.550193 5.73062 0.548293 5.96453C0.53547 6.22182 0.603714 6.48295 0.757736 6.6936C0.837272 6.80238 0.932333 6.88764 1.03639 6.94883L5.9316 11.6626C6.32943 12.0457 6.91618 11.9949 7.24216 11.549C7.56814 11.1032 7.5099 10.4313 7.11207 10.0482L2.90733 5.99925L7.11059 1.95176C7.50842 1.56867 7.56666 0.896714 7.24068 0.450893C6.91471 0.00507087 6.32795 -0.0457885 5.93012 0.337295L1.03012 5.05571Z"
+                        fill="#F81E36" />
+                </svg>
+                <span>Назад к корзине</span>
+            </a>
+            <div class="heading">
+                <h1 class="section__title title">Оформление заказа</h1>
+                <p>Номер заказа (25458)</p>
+            </div>
+            <form action="">
+                <div class="steps">
+                    <div class="step">
+                        <div class="step__heading">
+                            <p>
+                                <span class="step__heading__marker">1</span>
+                                <span class="step__heading__text">Контактные данные</span>
+                            </p>
+                        </div>
+                        <div class="step__input__container">
+                            <input class="white__input" type="text" id="name" name="name" placeholder="Ваше имя">
+                            <input class="white__input" type="tel" id="phone" name="phone" placeholder="Телефон">
+                            <input class="white__input" type="email" id="email" name="email" placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step__heading">
+                            <p>
+                                <span class="step__heading__marker">2</span>
+                                <span class="step__heading__text">Способ доставки</span>
+                            </p>
+                        </div>
+                        <div class="step__input__container">
+                            <div class="field__group">
+                                <label class="field__checkbox">
+                                    <input type="checkbox" name="" checked id="">
+                                    <span>Самовывоз из транспортной компании</span>
+                                </label>
+                                <label class="field__checkbox">
+                                    <input type="checkbox" name="" id="">
+                                    <span>Отгрузка транспортом или почтой</span>
+                                </label>
+                                <label class="field__checkbox">
+                                    <input type="checkbox" name="" id="">
+                                    <span>Доставка до дверей</span>
+                                </label>
+                            </div>
+
+                            <div class="map__container">
+                                <div class="map__container__text">
+                                    <div class="step__search">
+                                        <input class="white__input" type="search"
+                                            placeholder="Введите город">
+                                        <button>
+                                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M10.7438 10.1738L14.7786 14.2088C14.9204 14.3507 15.0001 14.5431 15 14.7438C14.9999 14.9444 14.9202 15.1368 14.7782 15.2786C14.6363 15.4204 14.4439 15.5001 14.2433 15.5C14.0426 15.4999 13.8502 15.4202 13.7084 15.2782L9.67361 11.2433C8.46745 12.1776 6.95069 12.6172 5.4319 12.4728C3.91311 12.3284 2.50637 11.6108 1.49785 10.4661C0.489335 9.32126 -0.0451967 7.83526 0.00299711 6.31034C0.0511909 4.78543 0.67849 3.33614 1.75728 2.25732C2.83607 1.17851 4.28532 0.551192 5.8102 0.502997C7.33508 0.454802 8.82104 0.989347 9.9658 1.99789C11.1106 3.00643 11.8281 4.41321 11.9725 5.93204C12.1169 7.45087 11.6773 8.96766 10.7431 10.1738H10.7438ZM6.00028 10.9996C7.1937 10.9996 8.33824 10.5255 9.18211 9.68159C10.026 8.8377 10.5001 7.69313 10.5001 6.49968C10.5001 5.30623 10.026 4.16166 9.18211 3.31777C8.33824 2.47387 7.1937 1.99978 6.00028 1.99978C4.80686 1.99978 3.66232 2.47387 2.81845 3.31777C1.97457 4.16166 1.50049 5.30623 1.50049 6.49968C1.50049 7.69313 1.97457 8.8377 2.81845 9.68159C3.66232 10.5255 4.80686 10.9996 6.00028 10.9996Z"
+                                                    fill="#9D9D9D" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="map__radio">
+                                        <div class="radio">
+                                            <input type="radio" id="cdek" checked name="delivery" />
+                                            <label for="credit"><img src="/dist/img/cdek_logo.png" alt=""></label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="pak" name="delivery" />
+                                            <label for="credit"><img src="/dist/img/pak_logo.png" alt=""></label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="delin" name="delivery" />
+                                            <label for="credit"><img src="/dist/img/Dellin_Logo.png" alt=""></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="map">
+                                    <img src="/dist/img/order-map.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step__heading">
+                            <p>
+                                <span class="step__heading__marker">3</span>
+                                <span class="step__heading__text">Способ доставки</span>
+                            </p>
+                        </div>
+                        <div class="step__input__container">
+                            <label class="field__checkbox">
+                                <input type="checkbox" checked name="" id="">
+                                <span>Физическое лицо</span>
+                            </label>
+                            <label class="field__checkbox">
+                                <input type="checkbox" name="" id="">
+                                <span>Юридическое лицо</span>
+                            </label>
+                            <input class="white__input" type="number" id="" name="inn" placeholder="ИНН организации">
+                        </div>
+
+
+
+                        <div class="step__input__container">
+                            <div class="radio__button">
+                                <input type="radio" id="credit" checked name="payment" />
+                                <label for="credit">Оплата банковской картой</label>
+                            </div>
+                            <div class="radio__button">
+                                <input type="radio" id="transfer" name="payment" />
+                                <label for="transfer">Перевод по реквизитам</label>
+                            </div>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий к заказу"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__contents">
+                    <div class="heading">Товары в заказе</div>
+                    <div class="order__item">
+                        <p class="name">Двигатель Loncin LC1P90F-1 (A type) D25.4 12А</p>
+                        <p>
+                            <span class="price">39 650 р.</span>
+                            <span class="separator">/</span>
+                            <span class="quantity">1 шт</span>
+                        </p>
+                    </div>
+                    <div class="order__item">
+                        <p class="name">Двигатель Loncin LC1P90F-1 (A type) D25.4 12А</p>
+                        <p>
+                            <span class="price">39 650 р.</span>
+                            <span class="separator">/</span>
+                            <span class="quantity">1 шт</span>
+                        </p>
+                    </div>
+                    <div class="total__container">
+                        <p>Скидка</p>
+                        <span>-1000 р.</span>
+                    </div>
+                    <div class="total__container">
+                        <p>Итого</p>
+                        <h3>39 650 р.</h3>
+                    </div>
+                    <p class="secondary">Бесплатная доставка при покупке свыше 50 000 ₽</p>
+                    <button class="red__button">Подтвердить заказ</button>
+                    <label class="field__checkbox">
+                        <input type="checkbox" checked name="personal__data" id="">
+                        <span>
+                        </span>
+                        <p class="personal__data">
+                            Я даю согласие на
+                            <a href="#"> обработку моих персональных данных</a>
+                        </p>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src="/dist/js/jquery.js"></script>
+    <script src="/dist/js/jquery-ui.js"></script>
+    <script src="/dist/js/swiper.js"></script>
+    <script src="/dist/js/slick.js"></script>
+    <script src="/dist/js/select2.js"></script>
+    <script src="/dist/js/main.js"></script>
+
+</body>
+
+</html>
