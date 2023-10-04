@@ -1,0 +1,169 @@
+@import "./_variables.less";
+
+.pc__only {
+    display: none;
+}
+
+.thanks__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.thanks__text {
+    margin-bottom: 20px;
+
+    * {
+        margin-bottom: 20px;
+    }
+    .btn {
+        margin-top: 50px;
+        width: 120px;
+        padding: 12px 16px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+    }
+    h1 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+
+@media (min-width:769px) {
+    .pc__only {
+        display: block;
+    }
+    .cart__side {
+        height: fit-content;
+    }
+    .thanks__container {
+        display: grid;
+        grid-template-columns: 1fr 305px;
+        gap: 0 50px;
+    }
+    .thanks__text {
+        h1 {
+            font-size: 35px;
+            font-weight: 500;
+            line-height: 42px;
+            margin-bottom: 40px;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+            margin-bottom: 30px;
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 25px;
+            margin-bottom: 50px;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//cart stuff
+.cart__side {
+    background-color: @grey-light;
+    border-radius: 20px;
+    padding: 20px;
+
+    h4 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+    }
+
+    p,
+    span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    span {
+        color: @main;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .total__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        &:first-child {
+            margin-bottom: 30px;
+        }
+
+        &:last-child {
+            margin-bottom: 20px;
+        }
+        a:hover {
+            opacity: 0.75;
+        }
+    }
+}
+
+
+
+@media (min-width:769px) {
+
+
+    .cart__side {
+        padding: 25px;
+
+        h4 {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 26px;
+        }
+
+        p,
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+        }
+    }
+
+}

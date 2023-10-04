@@ -1,0 +1,144 @@
+:root {
+  --title: 50px;
+  --subtitle: 35px;
+  --caption: 30px;
+  --subcaption: 24px;
+  --big-label: 22px;
+  --text-big: 20px;
+  --label: 18px;
+  --subject: 17px;
+  --text: 16px;
+  --small-label: 14px;
+  --text-small: 12px;
+  --thin-big: 11px;
+  --thin: 10px;
+  --thin-small: 9px;
+}
+.pc__only {
+  display: none;
+}
+.thanks__container {
+  display: flex;
+  flex-direction: column;
+}
+.thanks__text {
+  margin-bottom: 20px;
+}
+.thanks__text * {
+  margin-bottom: 20px;
+}
+.thanks__text .btn {
+  margin-top: 50px;
+  width: 120px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+.thanks__text h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+.thanks__text h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.thanks__text h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+@media (min-width: 769px) {
+  .pc__only {
+    display: block;
+  }
+  .cart__side {
+    height: fit-content;
+  }
+  .thanks__container {
+    display: grid;
+    grid-template-columns: 1fr 305px;
+    gap: 0 50px;
+  }
+  .thanks__text h1 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42px;
+    margin-bottom: 40px;
+  }
+  .thanks__text h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  .thanks__text h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 50px;
+  }
+}
+.cart__side {
+  background-color: #F9F9F9;
+  border-radius: 20px;
+  padding: 20px;
+}
+.cart__side h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+.cart__side p,
+.cart__side span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.cart__side span {
+  color: #F81E36;
+}
+.cart__side h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.cart__side .total__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.cart__side .total__container:first-child {
+  margin-bottom: 30px;
+}
+.cart__side .total__container:last-child {
+  margin-bottom: 20px;
+}
+.cart__side .total__container a:hover {
+  opacity: 0.75;
+}
+@media (min-width: 769px) {
+  .cart__side {
+    padding: 25px;
+  }
+  .cart__side h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .cart__side p,
+  .cart__side span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .cart__side h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+}
