@@ -1,0 +1,55 @@
+@import "./_variables.less";
+
+.pc__only {
+    display: none;
+}
+
+.policy {
+    h1 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+    }
+
+    p,li {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+
+        &.heading {
+            margin: 15px 0;
+        }
+    }
+    a {
+        color: @main;
+    }
+    ul {
+        padding-left: 25px;
+    }
+}
+
+@media (min-width:769px) {
+    .pc__only {
+        display: block;
+    }
+
+    .policy {
+        h1 {
+            font-size: 35px;
+            font-weight: 500;
+            line-height: 42px;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+        }
+    
+        p {
+    
+            &.heading {
+                margin: 25px 0;
+            }
+        }
+    }
+}

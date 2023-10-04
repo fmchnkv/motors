@@ -1,0 +1,58 @@
+:root {
+  --title: 50px;
+  --subtitle: 35px;
+  --caption: 30px;
+  --subcaption: 24px;
+  --big-label: 22px;
+  --text-big: 20px;
+  --label: 18px;
+  --subject: 17px;
+  --text: 16px;
+  --small-label: 14px;
+  --text-small: 12px;
+  --thin-big: 11px;
+  --thin: 10px;
+  --thin-small: 9px;
+}
+.pc__only {
+  display: none;
+}
+.policy h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+.policy p,
+.policy li {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.policy p.heading,
+.policy li.heading {
+  margin: 15px 0;
+}
+.policy a {
+  color: #F81E36;
+}
+.policy ul {
+  padding-left: 25px;
+}
+@media (min-width: 769px) {
+  .pc__only {
+    display: block;
+  }
+  .policy h1 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42px;
+  }
+  .policy h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+  .policy p.heading {
+    margin: 25px 0;
+  }
+}
