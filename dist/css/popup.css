@@ -49,56 +49,64 @@
     line-height: 29px;
   }
 }
-.input__group {
-  display: block;
-  margin-bottom: 15px;
-}
 .input__group a {
   color: #1B1A1A;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-.input__group input {
-  padding: 0;
-  height: initial;
-  width: initial;
-  margin-bottom: 0;
-  display: none;
-  cursor: pointer;
-}
-.input__group label {
-  position: relative;
-  cursor: pointer;
-}
-.input__group label:before {
-  content: '';
-  -webkit-appearance: none;
-  background-color: transparent;
-  border: 1px solid #1B1A1A;
-  padding: 10px;
-  border-radius: 5px;
+.personal__data {
   display: inline-block;
-  position: relative;
-  vertical-align: middle;
   cursor: pointer;
-  margin-right: 5px;
 }
-.input__group input:checked + label:after {
+.personal__data:hover input {
+  color: #F81E36;
+}
+.personal__data:hover input + span::before {
+  border-color: #F81E36;
+}
+.personal__data:not(:last-child) {
+  margin: 0 0 15px;
+}
+.personal__data input {
+  display: none;
+}
+.personal__data input:checked + span::before {
+  border-color: #F81E36;
+}
+.personal__data input:checked + span::after {
+  opacity: 1;
+}
+.personal__data span {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.personal__data span::before {
   content: '';
-  display: block;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #1B1A1A;
+  margin: 0 14px 0 0;
+}
+.personal__data span::after {
+  content: '';
   position: absolute;
-  border: 1px solid #F81E36;
-  border-radius: 5px;
+  left: 0;
   width: 23px;
   height: 23px;
   background-image: url(/dist/img/checkbox.svg);
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
-  top: 0px;
+  opacity: 0;
 }
-.input__group input:checked + label::before {
-  border: 1px solid #F81E36;
+.field__checkbox.d-flex {
+  display: flex;
+}
+.personal__data a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #1B1A1A;
 }
 textarea.the__input {
   padding: 16px 20px;
@@ -110,6 +118,9 @@ textarea.the__input {
   max-width: 100%;
   min-width: 100%;
   height: clamp(50px, 50px, 300px);
+}
+textarea.the__input:hover {
+  border: 1px solid #F81E36;
 }
 input.the__input {
   padding: 16px 20px;

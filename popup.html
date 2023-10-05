@@ -42,18 +42,30 @@
                     <div class="popup__card">
                         <h2>Связаться с нами</h2>
                         <form action="#">
-                            <input class="the__input" type="text" id="name" name="name" placeholder="Ваше имя">
-                            <input class="the__input" type="tel" id="phone" name="phone" placeholder="Телефон">
-                            <textarea class="the__input" type="text" id="email" name="email" placeholder="Комментарий"></textarea>
+                            <label for="name">
+                                <input class="the__input" type="text" id="name" name="name" placeholder="Ваше имя">
+                            </label>
+                            <label for="phone">
+                                <input class="the__input" type="tel" id="phone" name="phone" placeholder="Телефон">
+                            </label>
+                            <label for="comment">
+                                <textarea class="the__input" type="text" id="comment" name="comment"
+                                    placeholder="Комментарий"></textarea>
+                            </label>
                             <input class="red__button" type="submit" value="Отправить">
 
-                            <div class="input__group">
-                                <input type="checkbox" id="personal__data">
-                                <label for="personal__data">
+
+
+                            <label class="field__checkbox d-flex">
+                                <input type="checkbox" checked name="personal__data" id="">
+                                <span>
+                                </span>
+                                <p class="personal__data">
                                     Я даю согласие на
-                                </label>
-                                <a href="#"> обработку моих персональных данных</a>
-                            </div>
+                                    <a href="#"> обработку моих персональных данных</a>
+                                </p>
+                            </label>
+
 
                         </form>
                     </div>
